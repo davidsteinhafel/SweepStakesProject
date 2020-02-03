@@ -6,13 +6,29 @@ using System.Threading.Tasks;
 
 namespace SweepStakes
 {
-    static class UserInterface
+    public static class UserInterface
     {
-        static void GetUserInput()
+        public static string GetUserInput(string prompt)
         {
-            string userInput;
-            Console.ReadLine();
-            userInput = Console.ReadLine();
+            prompt = Console.ReadLine();
+            return prompt;
+        }
+        public static string GetUserName()
+        {
+            Console.WriteLine("Please Enter Your First Name");
+            return GetUserInput("");
+        }
+        public static string GetUserLastName()
+        {
+            Console.WriteLine("Please Enter Your Last Name");
+            return GetUserInput("");
+        }
+        public static string GetUserEmail()
+        {
+            Console.WriteLine("Please Enter Your Email Address");
+            while (!GetUserInput("").Contains("@"))
+            {
+                return Console.WriteLine("Invalid Email! Please Try Again!");
+            }
         }
     }
-}

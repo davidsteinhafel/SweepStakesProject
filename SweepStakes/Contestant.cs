@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace SweepStakes
 {
-    class Contestant
+    public class Contestant
     {
-        string firstName;
-        string lastName;
-        string email;
-        int registrationNumber;
+        public string firstName;
+        public string lastName;
+        public string email;
+        public int registrationNumber;
 
         public Contestant(string firstName, string lastName, string email, int registrationNumber)
         {

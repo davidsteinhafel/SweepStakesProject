@@ -6,11 +6,8 @@ using System.Threading.Tasks;
 
 namespace SweepStakes
 {
-    class Simulation
+    interface ISweepstakesManager
     {
-        public void CreateMarketingFirmWithManager()
-        {
-            //factoryPattern here 
-        }
+
     }
 }

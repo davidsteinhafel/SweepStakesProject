@@ -6,7 +6,16 @@ using System.Threading.Tasks;
 
 namespace SweepStakes
 {
-    class SweepStakesQueueManager
+    class SweepStakesQueueManager : ISweepstakesManager
     {
+        Queue<SweepStakes> queue = new Queue<SweepStakes>();
+        public void InsertSweepStakes(SweepStakes sweepStakes)
+        {
+            queue.Enqueue(sweepStakes);
+        }
+        public SweepStakes GetSweepStakes()
+        {
+            return new SweepStakes(UserInterface.GetUserInput())
+        }
     }
 }
