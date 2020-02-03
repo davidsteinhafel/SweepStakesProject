@@ -4,13 +4,21 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SweepStakes
+namespace Sweepstakes
 {
-    class Simulation
+    class Simulation 
     {
-        public void CreateMarketingFirmWithManager()
+        public ISweepstakesManager CreateMarketingFirmWithManager(string input)
         {
-            //factoryPattern here 
+            switch (input)
+            {
+                case ("Stack"):
+                    return new SweepstakesStackManager();
+                case ("Queue"):
+                    return new SweepstakesQueueManager();
+                default:
+                    return null;
+            }
         }
     }
 }

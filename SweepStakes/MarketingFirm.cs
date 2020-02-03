@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SweepStakes
+namespace Sweepstakes
 {
     class MarketingFirm 
     {
@@ -15,7 +15,7 @@ namespace SweepStakes
         }
         public void CreateSweepstake()
         {
-            _manager.GetSweepStakes();
+            _manager.GetSweepstakes();
         }
     }
 }

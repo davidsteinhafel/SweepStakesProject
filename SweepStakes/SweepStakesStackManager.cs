@@ -4,16 +4,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SweepStakes
+namespace Sweepstakes
 {
-    class SweepStakesStackManager : ISweepstakesManager
+    class SweepstakesStackManager : ISweepstakesManager
     {
-        Stack<SweepStakes> stack = new Stack<SweepStakes>();
-        public void InsertSweepstakes(SweepStakes sweepStakes)
+        Stack<Sweepstakes> stack = new Stack<Sweepstakes>();
+        public void InsertSweepstakes(Sweepstakes sweepStakes)
         {
             stack.Push(sweepStakes);
         }
-        public SweepStakes GetSweepstakes()
+        public Sweepstakes GetSweepstakes()
         {
             return stack.Pop();
         }

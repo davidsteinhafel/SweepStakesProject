@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SweepStakes
+namespace Sweepstakes
 {
     public static class UserInterface
     {
@@ -33,6 +33,10 @@ namespace SweepStakes
             }
 
             return prompt;
+        }
+        public static int GetUserRegistrationNumber(Contestant contestant)
+        {
+            return contestant.registrationNumber;
         }
     }
 }

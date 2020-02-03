@@ -4,11 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SweepStakes
+namespace Sweepstakes
 {
     interface ISweepstakesManager
     {
-        void InsertSweepstakes(SweepStakes sweepStakes);
-        SweepStakes GetSweepstakes();
+        void InsertSweepstakes(Sweepstakes sweepStakes);
+        Sweepstakes GetSweepstakes();
     }
 }

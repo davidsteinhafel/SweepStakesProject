@@ -4,15 +4,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SweepStakes
+namespace Sweepstakes
 {
-    public class SweepStakes
+    public class Sweepstakes
     {
         private Dictionary<int, Contestant> contestants;
         private string name;
         public string Name;
         
-        public SweepStakes(string name)
+        public Sweepstakes(string name)
         {
             this.name = name;
         }

@@ -4,16 +4,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SweepStakes
+namespace Sweepstakes
 {
-    class SweepStakesQueueManager : ISweepstakesManager
+    class SweepstakesQueueManager : ISweepstakesManager
     {
-        Queue<SweepStakes> queue = new Queue<SweepStakes>();
-        public void InsertSweepstakes(SweepStakes sweepStakes)
+        Queue<Sweepstakes> queue = new Queue<Sweepstakes>();
+        public void InsertSweepstakes(Sweepstakes sweepStakes)
         {
             queue.Enqueue(sweepStakes);
         }
-        public SweepStakes GetSweepstakes()
+        public Sweepstakes GetSweepstakes()
         {
             return queue.Dequeue();
         }
