@@ -20,5 +20,10 @@ namespace SweepStakes
             this.email = email;
             this.registrationNumber = registrationNumber;
         }
+
+        public void SetRegistrationNumber(int registration)
+        {
+            registrationNumber = registration;
+        }
     }
 }
