@@ -26,9 +26,13 @@ namespace SweepStakes
         public static string GetUserEmail()
         {
             Console.WriteLine("Please Enter Your Email Address");
-            while (!GetUserInput("").Contains("@"))
+            string prompt = GetUserInput("");
+            while (!prompt.Contains("@") && (!prompt.Contains(".com")))
             {
-                return Console.WriteLine("Invalid Email! Please Try Again!");
+                return GetUserEmail();
             }
+
+            return prompt;
         }
     }
+}
