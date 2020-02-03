@@ -15,7 +15,7 @@ namespace SweepStakes
         }
         public SweepStakes GetSweepStakes()
         {
-            return new SweepStakes(UserInterface.GetUserInput())
+            return queue.Dequeue();
         }
     }
 }
